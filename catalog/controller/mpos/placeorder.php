@@ -416,6 +416,10 @@ class ControllermposPlaceorder extends Controller {
                             $this->request->post['TAGGEDRATIO'] = $dataAuthentication['AMOUNT'] / ((float) ($mcrypt->decrypt($this->request->post['INVAMOUNT'])) - (float) ($mcrypt->decrypt($this->request->post['sub'])));
                             $log->write('TAGGEDRATIO');
                             $log->write($this->request->post['TAGGEDRATIO']);
+                            
+                            //\\################################## Add Check point for card amount ########################################//\\
+                            
+                            
                         }
                     }
                 } else {
@@ -459,58 +463,14 @@ class ControllermposPlaceorder extends Controller {
             $company = strtolower($companydata[0]['company_name']);
             $log->write($company);
         }
-        if (($company == 'dscl') && ($this->request->post['payment_method'] == 'Tagged')) {
-            //$log->write("Tagged payment is blocked for sometime.");
-            //$json['error']="Tagged payment is blocked for sometime.";
-            //$json['success'] = "-1";					
-            //$this->response->setOutput(json_encode($json));	
-            //return;
+        if (($company == 'dscl') && ($this->request->post['payment_method'] != 'Tagged')) {
+            $log->write($this->request->post['payment_method']." payment is blocked for sometime.");
+            $json['error']=$this->request->post['payment_method']." payment is blocked for sometime.";
+            $json['success'] = "-1";					
+            $this->response->setOutput(json_encode($json));	
+            return;
         }
-        if (($company == 'dscl') && ($this->request->post['payment_method'] !== 'Tagged Cash')) {
-            //$log->write("Tagged Cash payment is blocked for sometime.");
-            //$json['error']="Tagged Cash payment is blocked for sometime.";
-            //$json['success'] = "-1";					
-            //$this->response->setOutput(json_encode($json));	
-            //return;
-        }
-        if (($company == 'dscl') && ($this->request->post['payment_method'] !== 'Tagged Subsidy')) {
-            //$log->write("Tagged Subsidy payment is blocked for sometime.");
-            //$json['error']="Tagged Subsidy payment is blocked for sometime.";
-            //$json['success'] = "-1";					
-            //$this->response->setOutput(json_encode($json));	
-            //return;
-        }
-        if (($company == 'bcml') && ($this->request->post['payment_method'] !== 'Cash')) {
-            $fmcodecheck = $mcrypt->decrypt($this->request->post['fm_code']);
-            if (empty($fmcodecheck)) {
-                //fm code number not defined
-                $log->write("FM code not defined");
-                $json['error'] = "FM code not defined";
-                $json['success'] = "-1";
-                $this->response->setOutput(json_encode($json));
-                return;
-            }
-//check grower code				
-            $growercodecheck = $mcrypt->decrypt($this->request->post['growercode']);
-            if (empty($growercodecheck)) {
-                //grower number not defined
-                $log->write("Grower code not defined");
-                $json['error'] = "Grower code not defined";
-                $json['success'] = "-1";
-                $this->response->setOutput(json_encode($json));
-                return;
-            }
-//check grower name				
-            $growernamecheck = $mcrypt->decrypt($this->request->post['growername']);
-            if (empty($growernamecheck)) {
-                //grower number not defined
-                $log->write("Grower name not defined");
-                $json['error'] = "Grower name not defined";
-                $json['success'] = "-1";
-                $this->response->setOutput(json_encode($json));
-                return;
-            }
-        }
+       
         if ($company != "bcml" && ($this->request->post['payment_method'] == 'Tagged')) {
             //check for mobile is set of not
             if (!isset($this->request->post['lumpsum'])) {
@@ -542,7 +502,7 @@ class ControllermposPlaceorder extends Controller {
             }
         }
 ///check ase order
-        if (($this->request->post['payment_method'] !== 'Cash') && ($this->request->post['comment'] != '')) {
+        if (($this->request->post['payment_method'] == 'Tagged') && ($this->request->post['comment'] != '')) {
             try {
                 $ase_data = $this->model_pos_pos->getaseorderstatus($this->request->post['comment']);
                 if ((!empty($ase_data)) && (count($ase_data) > 0)) {
@@ -560,7 +520,9 @@ class ControllermposPlaceorder extends Controller {
                     return;
                 }
             } catch (Exception $e) {
-                
+                $json['error'] = $e;
+                $json['success'] = "-1";              
+                return $this->response->setOutput(json_encode($json));
             }
         }
 
@@ -573,12 +535,14 @@ class ControllermposPlaceorder extends Controller {
 //            
 //        }
         try {
-            if (($company = 'dscl') && ($this->request->post['payment_method'] !== 'Tagged')) {
-                $this->request->post['comment'] = '';
+            if (($company = 'dscl') && ($this->request->post['payment_method'] == 'Tagged')) {
+              //  $this->request->post['comment'] = '';
                 $log->write('payment_method is Tagged and company is dscl');
             }
         } catch (Exception $e) {
-            
+            $json['error'] = $e;
+            $json['success'] = "-1";              
+            return $this->response->setOutput(json_encode($json));
         }
 
 //check old
@@ -604,7 +568,7 @@ class ControllermposPlaceorder extends Controller {
         }
         $log->write($this->request->post);
         //productdetail
-        $prds = json_decode($this->request->post[prddtl], true);
+        $prds = json_decode($this->request->post['prddtl'], true);
         unset($this->session->data['user_id']);
         $this->session->data['user_id'] = $this->request->post['user_id'];
         $customer_id = $this->request->post['customer_id'];
@@ -629,6 +593,7 @@ class ControllermposPlaceorder extends Controller {
         //$data['store_url'] = $this->config->get('config_url');
         //check for product quantity
         $this->load->model('catalog/product');
+        $this->adminmodel('pos/dscl');
         foreach ($prds as $prd) {
             if ($prd['product_quantity'] < 1) {
                 $json['error'] = "Minimum Quantity should be 1";
@@ -650,7 +615,6 @@ class ControllermposPlaceorder extends Controller {
               $dscl_count = $this->model_pos_dscl->GetCardDataSql('GetCardDataSql',$filter_data_sql,0);
              */
             if (($company == "dscl") && ($this->request->post['payment_method'] != "Cash")) {
-                $this->adminmodel('pos/dscl');
                 $matcode = 100000 + $prd['product_id'];
                 $cardsql = "SELECT COUNT(1) as cnt FROM MATERIAL_MASTER WHERE MATCODE='" . $matcode . "'";
 
@@ -1605,7 +1569,7 @@ class ControllermposPlaceorder extends Controller {
         }
         $log->write('final return by addorder in order.php');
         $log->write($json);
-        $this->response->setOutput(json_encode($json));
+        return $this->response->setOutput(json_encode($json));
     }
 
     //\\################ End## Placed tagged order ################\\//
