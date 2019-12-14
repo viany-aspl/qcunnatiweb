@@ -1,0 +1,44 @@
+2019-12-14 5:03:57 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:03:57 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:04:49 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:04:49 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'þ'' at line 1<br />Error No: 1064<br /> select  * from oc_billing_status where `key`='[@mIu7{3ÂË3á'þ'   in /var/www/html/shop/system/library/db/mysqli.php on line 40
+2019-12-14 5:04:49 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/setting/setting.php on line 8
+2019-12-14 5:06:56 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/pos/dscl.php on line 579
+2019-12-14 5:06:56 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/pos/dscl.php on line 579
+2019-12-14 5:06:56 - PHP Notice:  Undefined variable: data2 in /var/www/html/shop/admin/model/pos/dscl.php on line 596
+2019-12-14 5:06:56 - PHP Notice:  Undefined variable: data2 in /var/www/html/shop/admin/model/pos/dscl.php on line 597
+2019-12-14 5:15:09 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:15:15 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:15:16 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:15:37 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:15:42 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:16:13 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:22:20 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:22:22 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:42:51 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:47:04 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:47:05 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:47:35 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:47:35 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:47:41 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:47:41 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:48:25 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:48:25 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'þ'' at line 1<br />Error No: 1064<br /> select  * from oc_billing_status where `key`='[@mIu7{3ÂË3á'þ'   in /var/www/html/shop/system/library/db/mysqli.php on line 40
+2019-12-14 5:48:25 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/setting/setting.php on line 8
+2019-12-14 5:49:16 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:49:17 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:50:33 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/pos/dscl.php on line 579
+2019-12-14 5:50:33 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/pos/dscl.php on line 579
+2019-12-14 5:50:33 - PHP Notice:  Undefined variable: data2 in /var/www/html/shop/admin/model/pos/dscl.php on line 596
+2019-12-14 5:50:33 - PHP Notice:  Undefined variable: data2 in /var/www/html/shop/admin/model/pos/dscl.php on line 597
+2019-12-14 5:54:44 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:54:52 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:54:55 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:54:56 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:55:00 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 5:55:46 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 6:11:51 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 6:31:02 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 6:31:02 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 6:31:08 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-14 7:22:16 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17

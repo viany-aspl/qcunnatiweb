@@ -1,0 +1,120 @@
+body{
+	transition:scale(1);
+	width:370px;
+	height:auto;
+}
+
+h5 {
+    font-size:8px !important;
+    font-weight:600 !important;
+    margin-bottom: 0 !important;
+    padding: 0px !important;
+}
+
+.mt_10{margin-top:10px;} .mt_20{margin-top:20px;} .mt_30{margin-top:30px;} .mt_40{margin-top:40px;} .mt_50{margin-top:50px;} 
+.mt_60{margin-top:60px;}
+
+.card_design{
+	width:100%;
+	float:left;
+}
+.qr_side{
+	width:35%;
+	height:auto;
+	background:#efefef;
+	float:left;
+}
+.left_side{
+	width:55%;
+	float:left;
+}
+.right_side{
+	width:45%;
+	float:left;
+}
+.details{
+	width:100%;
+	float:left;
+	margin: 10px 0;
+}
+.logo_area{
+	width:100%;
+	float:left;
+}
+.Qr_code{
+	border-image: url(border.png);
+	margin:0px auto;
+	float:left;
+}
+.content_side{
+	width:65%;
+	float:left;
+	background:#fff;
+}
+.unnati_logo_box{
+	width:100%;
+	float:left;
+}
+.logo_icon{
+	width:49%;
+	float:left;
+	margin:5px -20px 0px 0px;
+}
+.logo_text{
+	width:45%;
+	float:left;
+	margin:0;
+}
+.input{
+	border:0px solid #fff;
+	font-size:9px;
+	font-weight:bolder;
+	line-height:5px;
+	float:left;
+	width:100%;
+	color:#000;
+}
+
+.lable{
+	margin:10px 0px;
+	color:#000;
+}
+.small{
+	border:0px solid #fff;
+	font-size:10px;
+	font-weight:bolder;
+	line-height:9px;
+	float:left;
+	width:100%;
+	text-align:left;
+	margin-top: -1px;
+	color:#000;
+	  margin-bottom: 0;
+}
+.semibox{
+	float:left;
+	width:50%;
+}
+
+.serial_no{
+	width:100%;
+	float:left;
+}
+.serial_no h1{
+font-size:9px;
+font-weight: 600;
+margin:0 !important;
+}
+
+.image_size{
+	width:120px;
+	height:120px;
+}
+
+input[type=text], input[type=password], input.text, input.title, textarea, select {
+    margin: 3px 0;
+}
+
+.span-7 {
+    margin:0px auto;
+}

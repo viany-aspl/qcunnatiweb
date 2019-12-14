@@ -1,0 +1,10 @@
+2019-12-14 5:04:49 - SELECT * FROM oc_unit  ou left join oc_company occ on occ.company_id= ou.company_id where ou.unit_id='1' and ou.company_id='1' 
+2019-12-14 5:04:49 - Array
+(
+)
+
+2019-12-14 5:48:25 - SELECT * FROM oc_unit  ou left join oc_company occ on occ.company_id= ou.company_id where ou.unit_id='1' and ou.company_id='1' 
+2019-12-14 5:48:25 - Array
+(
+)
+

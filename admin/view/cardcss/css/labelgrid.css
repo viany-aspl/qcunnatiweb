@@ -1,0 +1,221 @@
+/*
+ * labelgrid
+ *
+ * Copyright (c) 2010 labelgrid.net (http://labelgrid.net/GPL-LICENSE.txt)
+ * Licensed under the GPL (GPL-LICENSE.txt) licenses.
+ *
+ * http://www.labelgrid.net
+ */
+
+#container {
+      position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	height: auto;
+
+}
+
+#menu {
+    position:relative;
+	margin-left: 0.00in;
+	margin-right: 0..00in;
+	margin-top: 0.1in;
+	margin-bottom: 0.1in;
+	width: auto;
+	height: auto;
+
+      border:1px solid black;
+      border-style:dotted;
+
+}
+
+#progress {
+	background-color: lightgrey;
+	color: white;
+	font-size:18px;
+	font-weight: bold;
+	height: 80px;
+	left: 60px;
+	line-height: 80px;
+	margin: 0 auto;
+	position: absolute;
+	text-align: center;
+	top: 120px;
+	width: 200px;
+}
+
+.paperpreview {
+      position:relative;
+      margin: 0.00in;
+	padding: 0;
+	left: 0.00in;
+	top: 0.00in;
+
+	width: auto;
+	height: auto;
+     border:1px solid black;
+      border-style:dotted;
+}
+
+.paper {
+      position:relative;
+      margin: 0.00in;
+	padding: 0;
+	left: 0.00in;
+	top: 0.00in;
+	width: 8.27in;
+	height: 11.69in;
+      border:1px solid black;
+      border-style:dotted;
+}
+
+
+.labelwrapper {
+      position:relative;
+ 	border-collapse:collapse; 
+      margin: 0.00in;
+	padding: 0;
+	left: 0.00in;
+	top: 0.00in;
+	width: 8.27in;
+	height: 11.69in;
+      border:0px solid black;
+      border-style:dotted;
+      background:white;
+}
+
+.labelbox {
+      position:relative;
+ 	border-collapse:collapse; 
+      margin: 0.00in;
+	padding: 0;
+	left: 0.00in;
+	top: 0.00in;
+	width: 8.27in;
+	height: 11.69in;
+      border:0px solid black;
+      border-style:dotted;
+      background:white;
+}
+
+
+#papersketch {
+	background:#F8F8F8;
+      position:relative;
+      margin: 0.00in;
+	padding: 0;
+	left: 0.00in;
+	top: 0.00in;
+	width: auto;
+	height: auto;
+      border:1px solid black;
+      border-style:dotted;
+}
+
+
+.templatecontainer {
+    position:relative;
+    border-collapse:collapse; 
+    width:auto; 
+    height:auto;
+    margin: 0.00in;
+    padding: 0;
+    left: 0.00in;
+    top: 0.00in;
+}
+
+
+.labelcontainer {
+    background:#F8F8F8;
+    position:relative;
+    border-collapse:collapse; 
+    width:3.0967in; 
+    height:auto;
+    margin: 0.00in;
+    padding: 0;
+    left: 0.00in;
+    top: 0.00in;
+}
+
+.label {
+    background:white;
+    position:absolute;
+    border-collapse:collapse; 
+    width:3.0967in; 
+    height:2.00in;
+    margin: 0.00in;
+    padding: 0;
+    left: 0.00in;
+    top: 0.00in;
+    border:1px solid black;
+    border-style:dotted;
+}
+
+#label1 {
+    background:white;
+    position:relative;
+    border-collapse:collapse; 
+    width:3.0967in; 
+    height:2.00in;
+    margin: 0.00in;
+    padding: 0;
+    left: 0.00in;
+    top: 0.00in;
+    border:1px solid black;
+    border-style:dotted;	
+}
+
+
+#label2 {
+    background:white;
+    position:absolute;
+    border-collapse:collapse; 
+    width:3.0967in; 
+    height:2.00in;
+    margin: 0.00in;
+    padding: 0;
+    left: 0.00in;
+    top: 0.00in;
+    border:1px solid black;
+    border-style:dotted;
+}
+
+#label3 {
+    background:white;
+    position:absolute;
+    border-collapse:collapse; 
+    width:3.0967in; 
+    height:2.00in;
+    margin: 0.00in;
+    padding: 0;
+    left: 0.00in;
+    top: 0.00in;
+    border:1px solid black;
+    border-style:dotted;
+}
+
+#label4 {
+    background:white;
+    position:absolute;
+    border-collapse:collapse; 
+    width:3.0967in; 
+    height:2.00in;
+    margin: 0.00in;
+    padding: 0;
+    left: 0.00in;
+    top: 0.00in;
+    border:1px solid black;
+    border-style:dotted;
+}
+.label-text{
+    position:absolute;
+    margin: 0.00in;
+    padding: 0;
+    left: 0.00in;
+    top: 0.00in;
+    font-size: large;
+}
+
+
+

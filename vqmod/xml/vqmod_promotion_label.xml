@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+
+	<id><![CDATA[Promotion Label]]></id>
+	<version><![CDATA[2.0.0]]></version>
+	<vqmver><![CDATA[2.4.1]]></vqmver>
+	<author><![CDATA[<a onClick="window.open('http://www.opencart.com/index.php?route=extension/extension&filter_username=frymi');" title="View all OpenCart extension by frymi">frymi</a>]]></author>
+
+  <!--
+  module / bestseller
+  module / featured
+  module / latest
+  module / related (new)
+  module / similar (new)
+  module / special
+  
+  product / category
+  product / compare ? (ne)
+  product / manufacturer
+  product / productall (new)
+  product / search
+  product / special
+  -->
+
+
+  <!-- COMMON / HEADER -->
+
+<!-- 
+.sper {background:#ffd700; border-radius:3.5em; -khtml-border-radius:3.5em; -moz-border-radius:3.5em; -webkit-border-radius:3.5em; font: bold 12px Arial, Helvetica; padding:1.1em 0px 1.1em; position:absolute; top:5px; right:5px; text-align:center; width:3.5em; z-index:10;} /* 5c */
+.sper {background:#ffd700; border-radius:3.5em; -khtml-border-radius:3.5em; -moz-border-radius:3.5em; -webkit-border-radius:3.5em; font: bold 18px Arial, Helvetica; padding:1.1em 0px 1.1em; position:absolute; top:-10px; right:5px; text-align:center; width:3.5em; z-index:10;} /* 3c */
+-->
+
+  <file name="catalog/view/theme/*/template/common/header.tpl">
+    <operation>
+      <search position="before" index="1"><![CDATA[<?php foreach ($styles as $style) { ?>]]></search>
+      <add><![CDATA[
+<style type="text/css">
+.image {position:relative;}
+.sper {background:#ffd700; border-radius:3.5em; -khtml-border-radius:3.5em; -moz-border-radius:3.5em; -webkit-border-radius:3.5em; font: bold 18px Arial, Helvetica; padding:1.1em 0px 1.1em; position:absolute; top:-10px; right:5px; text-align:center; width:3.5em; z-index:10;} /* 3c */
+div > .image:hover div {background:#fff; opacity:0.5; filter:alpha(opacity=50);}
+</style>
+]]></add>
+    </operation>
+  </file>
+      <!-- 
+      <add><![CDATA[<link rel="stylesheet" type="text/css" href="catalog/view/theme/<?php echo $this->config->get('config_template'); ?>/stylesheet/promotion_label.css" />]]></add>
+      -->  
+
+
+  <!-- catalog / controller / module -->
+  
+	<file path="catalog/controller/module/" name="bestseller.php,featured.php,latest.php,related.php,similar.php,special.php" error="skip">
+    <operation>
+      <search position="after" error="log"><![CDATA[$this->data['products'][] = array(]]></search>
+      <add><![CDATA[
+					'price_0'        => ( isset($result['price'])   ? $result['price']   : $product_info['price'] ),
+					'special_0'      => ( isset($result['special']) ? $result['special'] : ( isset($product_info['special']) ? $product_info['special'] : false ) ),
+      ]]></add>
+    </operation>    
+	</file>
+
+	<file path="catalog/language/*/module/" name="bestseller.php,featured.php,latest.php,related.php,similar.php,special.php" error="skip">
+    <operation>
+      <search position="after"><![CDATA[<?php]]></search>
+      <add><![CDATA[$_['text_promo_label'] = '%s' . '%%';]]></add>
+    </operation>
+	</file>
+	
+  <file path="catalog/view/theme/*/template/module/" name="bestseller.tpl,featured.tpl,latest.tpl,related.tpl,similar.tpl,special.tpl" error="skip">
+    <operation>
+      <search position="replace" index="1" error="log"><![CDATA[<div class="image">]]></search>		   
+                                      <add><![CDATA[<div class="image">
+<?php if ( $product['special'] AND $product['special'] != $product['price'] AND $product['special_0'] ) { $percent  = -1 * ( 1 - $product['special_0'] / $product['price_0'] ) * 100; ?>
+<div class="sper"><?php echo sprintf($this->language->get('text_promo_label'), round($percent,0)); ?></div>
+<?php } // if special ?>
+]]></add>
+		    </operation>
+	</file>
+
+
+  <!-- catalog / controller / product -->
+  
+	<file path="catalog/controller/product/" name="category.php,manufacturer.php,productall.php,search.php,special.php" error="skip">
+    <operation>
+      <search position="after" error="log"><![CDATA[$this->data['products'][] = array(]]></search>
+      <add><![CDATA[
+					'price_0'        => ( isset($result['price'])   ? $result['price']   : $product_info['price'] ),
+					'special_0'      => ( isset($result['special']) ? $result['special'] : ( isset($product_info['special']) ? $product_info['special'] : false ) ),
+      ]]></add>
+    </operation>    
+	</file>
+
+	<file path="catalog/language/*/product/" name="category.php,manufacturer.php,productall.php,search.php,special.php" error="skip">
+    <operation>
+      <search position="after"><![CDATA[<?php]]></search>
+      <add><![CDATA[$_['text_promo_label'] = '%s' . '%%';]]></add>
+    </operation>
+	</file>
+	
+  <file path="catalog/view/theme/*/template/product/" name="manufacturer_info.tpl,productall.tpl,search.tpl,special.tpl" error="skip">
+    <operation>
+      <search position="replace" index="1" error="log"><![CDATA[<div class="image">]]></search>		   
+                                      <add><![CDATA[<div class="image">
+<?php if ( $product['special'] AND $product['special'] != $product['price'] AND $product['special_0'] ) { $percent  = -1 * ( 1 - $product['special_0'] / $product['price_0'] ) * 100; ?>
+<div class="sper"><?php echo sprintf($this->language->get('text_promo_label'), round($percent,0)); ?></div>
+<?php } // if special ?>
+]]></add>
+		    </operation>
+	</file>  
+  <file path="catalog/view/theme/*/template/product/" name="category.tpl" error="skip">
+    <operation>
+      <search position="replace" index="2" error="log"><![CDATA[<div class="image">]]></search>		   
+                                      <add><![CDATA[<div class="image">
+<?php if ( $product['special'] AND $product['special'] != $product['price'] AND $product['special_0'] ) { $percent  = -1 * ( 1 - $product['special_0'] / $product['price_0'] ) * 100; ?>
+<div class="sper"><?php echo sprintf($this->language->get('text_promo_label'), round($percent,0)); ?></div>
+<?php } // if special ?>
+]]></add>
+		    </operation>
+	</file>
+
+  <!--
+  $percent  = -1 * ( $product['price_0'] - $product['special_0'] ) / $product['price_0'] * 100;
+  $percent  = -1 * ( 1 - $product['special_0'] / $product['price_0'] ) * 100;
+  -->
+
+  <!-- 
+  ... AND $product['special_0'] ... pro osetreni pripadu slevy "-100%", jelikoz neni aktualizovana CACHE
+  -->
+	
+</modification>

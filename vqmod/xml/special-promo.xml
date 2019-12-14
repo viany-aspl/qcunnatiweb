@@ -1,0 +1,33 @@
+<modification>
+	<id><![CDATA[special-promo-image]]></id>
+	<version><![CDATA[1.0]]></version>
+	<vqmver><![CDATA[2.1.6]]></vqmver>
+	<author><![CDATA[All Rights Reserved-dhwalin.com]]></author>
+	
+	<file name="catalog/view/theme/*/template/product/category.tpl" >
+		<operation>
+		   <search position="after"><![CDATA[
+      <div class="product-thumb">
+      ]]></search>
+		   
+		   <add><![CDATA[<div>
+		   
+	                           <?php 
+                           if ($product['special']) { ?>  
+                  <div class="specialPercent" style="color: #fff; font-weight: bold; position: absolute; background-color:#F00; top:1em;right:2em;padding:0.5em">
+                  <?php 
+                  $string = $product['price'];
+                  $string1 = $product['special'];
+$int_price = substr(intval(preg_replace('/[^0-9]+/', '', $string), 10),0,-2);
+$int_sprice = substr(intval(preg_replace('/[^0-9]+/', '', $string1), 10),0,-2);
+					echo round(($int_price-$int_sprice)/$int_price*100) . "% OFF";
+                  ?>
+                  </div>
+                  <?php } ?>	   
+		   
+		</div>]]></add>
+		    </operation>
+	</file>
+	
+	
+</modification>

@@ -1,0 +1,213 @@
+<?php
+require_once(DIR_SYSTEM .'/library/mail/class.phpmailer.php');
+require_once(DIR_SYSTEM . 'library/mail/class.smtp.php');
+
+  
+class ControllerFarmerrequestCardsummaryreport extends Controller {
+	private $error = array();
+
+	public function index() {		
+
+		$this->document->setTitle('Card Summary Report');
+
+		$this->load->model('farmerrequest/farmerrequest');
+
+		$this->getList();
+	}
+        protected function getList() {
+		             error_reporting(0);
+		
+		if (isset($this->request->get['filter_date_start'])) {
+			$filter_date_start = $this->request->get['filter_date_start'];
+		} else {
+			$filter_date_start = date('Y-m-d', strtotime(date('Y') . '-' . date('m') . '-01'));
+		}
+
+		if (isset($this->request->get['filter_date_end'])) {
+			$filter_date_end = $this->request->get['filter_date_end'];
+		} else {
+			$filter_date_end = date('Y-m-d');
+		}
+
+
+		$url = '';
+	
+		if (isset($this->request->get['filter_date_start'])) {
+$url .= '&filter_date_start=' . $this->request->get['filter_date_start'];
+}
+
+if (isset($this->request->get['filter_date_end'])) {
+$url .= '&filter_date_end=' . $this->request->get['filter_date_end'];
+}
+		
+		if (isset($this->request->get['page'])) {
+			$page=$this->request->get['page'];
+		}
+		else
+		{
+			$page=1;
+			$_SESSION[session_id()]='';
+			$_SESSION['all_selected']='';
+		}
+		$data['breadcrumbs'] = array();
+
+		
+
+		$data['breadcrumbs'][] = array(
+			'text' => 'Card Print Form',
+			'href' => $this->url->link('farmerrequest/cardprint', 'token=' . $this->session->data['token'], 'SSL')
+		);
+
+		$data['token'] = $this->session->data['token'];
+	
+		$data['orders'] = array();
+		
+		$filter_data = array(
+			'filter_date_start'	     => $filter_date_start,
+			'filter_date_end'	     => $filter_date_end
+		);
+		//print_r($filter_data);
+		
+		$results = $this->model_farmerrequest_farmerrequest->getcardsummarydtl($filter_data);
+	    //$order_total=$revieTotal = $this->model_farmerrequest_farmerrequest->getcardsummaryToatal($filter_data);
+	  // echo $order_total; 
+	   
+		foreach ($results as $result) {
+		
+			$data['orders'][] = array(
+                'FACTORY' => $result['unit_name'],
+                'REQUTITION' => $result['requsition'],
+				'REQUEST' => $result['request'],
+				'APPROVED' => $result['approved'],
+				'PRINTING'     => $result['printing'],
+				'PRINTED'     => $result['printed'],
+				'DISPATCHED' => $result['dispatch'],
+				'VERIFY' => $result['verify'],
+				'DELIVERED'     => $result['deliver'],
+                'BLOCKED'     => $result['blocked'],
+				'REJECTED'     => $result['rejected']
+			);
+		}
+		
+		//$data['heading_title'] = $this->language->get('heading_title');
+		
+		$data['text_list'] = $this->language->get('text_list');
+		$data['text_no_results'] = 'Please Select Grower Id';
+		
+
+		$data['button_add'] = $this->language->get('button_add');
+		$data['button_edit'] = $this->language->get('button_edit');
+		
+
+		if (isset($this->session->data['error'])) {
+			$data['error_warning'] = $this->session->data['error'];
+			unset($this->session->data['error']);
+		} else {
+			$data['error_warning'] = '';
+		}
+
+		if (isset($this->session->data['success'])) {
+			$data['success'] = $this->session->data['success'];
+
+			unset($this->session->data['success']);
+		} else {
+			$data['success'] = '';
+		}
+		
+		$pagination = new Pagination();
+		$pagination->total = $order_total;
+		$pagination->page = $page;
+		$pagination->limit = $this->config->get('config_limit_admin');
+		$pagination->url = $this->url->link('farmerrequest/cardprint', 'token=' . $this->session->data['token'] . $url . '&page={page}', 'SSL');
+		$data['filter_date_start'] = $filter_date_start;
+		$data['filter_date_end'] = $filter_date_end;
+		$data['filter_association'] = $filter_association;
+		$data['pagination'] = $pagination->render();
+        $data['companys'] = $this->model_farmerrequest_farmerrequest->getComapny();
+        $data['units'] = $this->model_farmerrequest_farmerrequest->getUnit();
+		$data['results'] = sprintf($this->language->get('text_pagination'), ($order_total) ? (($page - 1) * $this->config->get('config_limit_admin')) + 1 : 0, ((($page - 1) * $this->config->get('config_limit_admin')) > ($order_total - $this->config->get('config_limit_admin'))) ? $order_total : ((($page - 1) * $this->config->get('config_limit_admin')) + $this->config->get('config_limit_admin')), $order_total, ceil($order_total / $this->config->get('config_limit_admin')));
+		$data['header'] = $this->load->controller('common/header');
+		$data['column_left'] = $this->load->controller('common/column_left');
+		$data['footer'] = $this->load->controller('common/footer');
+
+		$this->response->setOutput($this->load->view('farmerrequest/cardsummaryreport.tpl', $data));
+}
+
+public function download_excel() {
+
+
+
+$this->load->model('farmerrequest/farmerrequest');
+$results = $this->model_farmerrequest_farmerrequest->getcardsummarydtl($filter_data);
+//print_r($results);exit; 
+
+include_once '../system/library/PHPExcel.php';
+
+include_once '../system/library/PHPExcel/IOFactory.php';
+
+$objPHPExcel = new PHPExcel();
+
+$objPHPExcel->createSheet();
+
+$objPHPExcel->getProperties()->setTitle("export")->setDescription("none");
+
+$objPHPExcel->setActiveSheetIndex(0);
+
+// Field names in the first row
+$fields = array( 
+'Factory',
+'Requisition',
+
+'Printing',
+'Printed',
+'Dispatch',
+'Verify',
+'Pending Approval',
+'Approved',
+'Delivered', 
+'Rejected', 
+'Blocked'
+);
+
+$col = 0;
+foreach ($fields as $field)
+{
+$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow($col, 1, $field);
+$col++;
+} 
+$row = 2; 
+
+
+foreach($results as $data)
+{ 
+
+$col = 0; 
+$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(0, $row, $data['unit_name']);
+$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(1, $row, $data['requsition']);
+
+$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(2, $row, $data['printing']);
+$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(3, $row, $data['printed']);
+
+$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(4, $row, $data['dispatch']);
+$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(5, $row, $data['verify']);
+$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(6, $row, $data['request']);
+$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(7, $row, $data['approved']);
+$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(8, $row, $data['deliver']);
+$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(9, $row, $data['rejected']);
+$objPHPExcel->getActiveSheet()->setCellValueByColumnAndRow(10, $row, $data['blocked']);
+$row++;
+
+}
+//exit;
+$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+// Sending headers to force the user to download the file
+header('Content-Type: application/vnd.ms-excel');
+header('Content-Disposition: attachment;filename="'.$companyname.''.$unitname."Card Summary Report".date('d-m-Y').'.xls"');
+header('Cache-Control: max-age=0');
+$objWriter->save('php://output'); 
+
+}
+
+	
+
+}

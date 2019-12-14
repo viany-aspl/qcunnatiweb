@@ -1,0 +1,51 @@
+2019-12-13 6:20:58 - Array
+(
+    [user_id] => 80
+    [lumpsum] => 0
+    [store_id] => 46
+    [payment_method] => Tagged
+    [company] => dscl
+    [customer_mob] => 55566
+    [GROWER_NAME] => vikah
+    [username] => dscl
+    [affiliate_id] => 0
+    [utype] => 36
+    [card_no] => 110230354367
+    [prdsub] => 512
+    [grower_id] => 
+    [unit_id] => 
+)
+
+2019-12-13 6:20:58 - <gid>91F4izRD9P1ZIS8aDrdU6w==</gid><uid>91F4izRD9P1ZIS8aDrdU6w==</uid>
+2019-12-13 6:20:58 - http://1.22.91.231/akshamob/service.asmx?op=GetGrowerNo
+2019-12-13 6:23:05 - Error for method GetGrowerNo
+2019-12-13 6:23:05 - Failed to connect to 1.22.91.231 port 80: Connection timed out
+2019-12-13 6:23:05 - actual response from the dscl web service is for method GetGrowerNo
+2019-12-13 6:23:05 - 
+2019-12-13 6:23:05 - 
+2019-12-13 6:26:01 - Array
+(
+    [user_id] => 80
+    [lumpsum] => 0
+    [store_id] => 46
+    [payment_method] => Tagged
+    [company] => dscl
+    [customer_mob] => 55566
+    [GROWER_NAME] => vikah
+    [username] => dscl
+    [affiliate_id] => 0
+    [utype] => 36
+    [card_no] => 110230354367
+    [prdsub] => 512
+    [CARD_UNITvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv] => 
+    [grower_id] => 
+    [unit_id] => 
+)
+
+2019-12-13 6:26:01 - <gid>91F4izRD9P1ZIS8aDrdU6w==</gid><uid>91F4izRD9P1ZIS8aDrdU6w==</uid>
+2019-12-13 6:26:01 - http://1.22.91.231/akshamob/service.asmx?op=GetGrowerNo
+2019-12-13 6:28:08 - Error for method GetGrowerNo
+2019-12-13 6:28:08 - Failed to connect to 1.22.91.231 port 80: Connection timed out
+2019-12-13 6:28:08 - actual response from the dscl web service is for method GetGrowerNo
+2019-12-13 6:28:08 - 
+2019-12-13 6:28:08 - 

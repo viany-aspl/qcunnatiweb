@@ -1,0 +1,53 @@
+2019-12-13 6:20:58 - Array
+(
+    [user_id] => 80
+    [lumpsum] => 0
+    [store_id] => 46
+    [payment_method] => Tagged
+    [company] => dscl
+    [customer_mob] => 55566
+    [GROWER_NAME] => vikah
+    [username] => dscl
+    [affiliate_id] => 0
+    [utype] => 36
+    [card_no] => 110230354367
+    [prdsub] => 512
+    [grower_id] => 
+    [unit_id] => 
+)
+
+2019-12-13 6:23:05 - <gid>91F4izRD9P1ZIS8aDrdU6w==</gid><uid>91F4izRD9P1ZIS8aDrdU6w==</uid>
+2019-12-13 6:23:05 - 
+2019-12-13 6:23:05 - response1 from dscl is : 
+2019-12-13 6:23:05 - 
+2019-12-13 6:23:05 - 
+2019-12-13 6:23:05 - 
+2019-12-13 6:23:05 - 
+2019-12-13 6:23:05 - 
+2019-12-13 6:26:01 - Array
+(
+    [user_id] => 80
+    [lumpsum] => 0
+    [store_id] => 46
+    [payment_method] => Tagged
+    [company] => dscl
+    [customer_mob] => 55566
+    [GROWER_NAME] => vikah
+    [username] => dscl
+    [affiliate_id] => 0
+    [utype] => 36
+    [card_no] => 110230354367
+    [prdsub] => 512
+    [CARD_UNITvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv] => 
+    [grower_id] => 
+    [unit_id] => 
+)
+
+2019-12-13 6:28:08 - <gid>91F4izRD9P1ZIS8aDrdU6w==</gid><uid>91F4izRD9P1ZIS8aDrdU6w==</uid>
+2019-12-13 6:28:08 - 
+2019-12-13 6:28:08 - response1 from dscl is : 
+2019-12-13 6:28:08 - 
+2019-12-13 6:28:08 - 
+2019-12-13 6:28:08 - 
+2019-12-13 6:28:08 - 
+2019-12-13 6:28:08 - 

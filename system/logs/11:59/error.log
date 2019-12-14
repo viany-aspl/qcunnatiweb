@@ -1,0 +1,108 @@
+2019-12-13 6:19:55 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-13 6:19:55 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'þ'' at line 1<br />Error No: 1064<br /> select  * from oc_billing_status where `key`='[@mIu7{3ÂË3á'þ'   in /var/www/html/shop/system/library/db/mysqli.php on line 40
+2019-12-13 6:19:55 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/setting/setting.php on line 8
+2019-12-13 6:19:55 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'þ'' at line 1<br />Error No: 1064<br />SELECT oc_store_to_unit.unit_id,oc_unit.unit_name as unit_name FROM `oc_store_to_unit` left join oc_unit on oc_store_to_unit.unit_id=oc_unit.unit_id where oc_store_to_unit.store_id='[@mIu7{3ÂË3á'þ'  in /var/www/html/shop/system/library/db/mysqli.php on line 40
+2019-12-13 6:19:55 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/setting/store.php on line 26
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: HTTP_UCU in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 170
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: HTTP_UPN in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 227
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: customer_id in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: prddtl in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: customer_mobile in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: amtcash in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: subcash in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: sub in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: docs in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: doc_number in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: comment in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: stock_fm in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: spray in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: coupon in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: mpin in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: kitdtl in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: form_no in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:19:55 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:19:55 - PHP Warning:  Illegal string offset 'unitid' in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 478
+2019-12-13 6:19:55 - PHP Notice:  Use of undefined constant prddtl - assumed 'prddtl' in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 628
+2019-12-13 6:19:55 - PHP Notice:  Undefined index: customer_id in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 636
+2019-12-13 6:20:58 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-13 6:20:58 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'þ'' at line 1<br />Error No: 1064<br /> select  * from oc_billing_status where `key`='[@mIu7{3ÂË3á'þ'   in /var/www/html/shop/system/library/db/mysqli.php on line 40
+2019-12-13 6:20:58 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/setting/setting.php on line 8
+2019-12-13 6:20:58 - PHP Notice:  Undefined index: CARD_UNIT in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 136
+2019-12-13 6:20:58 - PHP Notice:  Undefined index: CARD_COMPANY in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 136
+2019-12-13 6:20:58 - PHP Notice:  Undefined index: growercode in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 140
+2019-12-13 6:20:58 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:20:58 - PHP Notice:  Undefined index: CARD_UNIT in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 141
+2019-12-13 6:23:05 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/pos/dscl.php on line 579
+2019-12-13 6:23:05 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/pos/dscl.php on line 579
+2019-12-13 6:23:05 - PHP Notice:  Undefined variable: data2 in /var/www/html/shop/admin/model/pos/dscl.php on line 596
+2019-12-13 6:23:05 - PHP Notice:  Undefined variable: data2 in /var/www/html/shop/admin/model/pos/dscl.php on line 597
+2019-12-13 6:26:01 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-13 6:26:01 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'þ'' at line 1<br />Error No: 1064<br /> select  * from oc_billing_status where `key`='[@mIu7{3ÂË3á'þ'   in /var/www/html/shop/system/library/db/mysqli.php on line 40
+2019-12-13 6:26:01 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/setting/setting.php on line 8
+2019-12-13 6:26:01 - PHP Notice:  Undefined index: CARD_UNIT in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 136
+2019-12-13 6:26:01 - PHP Notice:  Undefined index: CARD_COMPANY in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 136
+2019-12-13 6:26:01 - PHP Notice:  Undefined index: growercode in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 140
+2019-12-13 6:26:01 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:26:01 - PHP Notice:  Undefined index: CARD_UNIT in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 141
+2019-12-13 6:28:08 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/pos/dscl.php on line 579
+2019-12-13 6:28:08 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/pos/dscl.php on line 579
+2019-12-13 6:28:08 - PHP Notice:  Undefined variable: data2 in /var/www/html/shop/admin/model/pos/dscl.php on line 596
+2019-12-13 6:28:08 - PHP Notice:  Undefined variable: data2 in /var/www/html/shop/admin/model/pos/dscl.php on line 597
+2019-12-13 6:28:43 - PHP Warning:  unlink(/var/www/html/shop/system/cache/cache.order_status.1.1574754637): Permission denied in /var/www/html/shop/system/library/cache/file.php on line 17
+2019-12-13 6:28:43 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'þ'' at line 1<br />Error No: 1064<br /> select  * from oc_billing_status where `key`='[@mIu7{3ÂË3á'þ'   in /var/www/html/shop/system/library/db/mysqli.php on line 40
+2019-12-13 6:28:43 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/setting/setting.php on line 8
+2019-12-13 6:28:43 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'þ'' at line 1<br />Error No: 1064<br />SELECT oc_store_to_unit.unit_id,oc_unit.unit_name as unit_name FROM `oc_store_to_unit` left join oc_unit on oc_store_to_unit.unit_id=oc_unit.unit_id where oc_store_to_unit.store_id='[@mIu7{3ÂË3á'þ'  in /var/www/html/shop/system/library/db/mysqli.php on line 40
+2019-12-13 6:28:43 - PHP Notice:  Trying to get property of non-object in /var/www/html/shop/admin/model/setting/store.php on line 26
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: HTTP_UCU in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 170
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: HTTP_UPN in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 227
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: customer_id in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: prddtl in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: customer_mobile in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: amtcash in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: subcash in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: sub in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: docs in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: doc_number in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: comment in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: stock_fm in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: spray in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: coupon in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: mpin in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: kitdtl in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: form_no in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 460
+2019-12-13 6:28:43 - PHP Warning:  mdecrypt_generic(): An empty string was passed in /var/www/html/shop/system/library/mcrypt.php on line 47
+2019-12-13 6:28:43 - PHP Warning:  Illegal string offset 'unitid' in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 478
+2019-12-13 6:28:43 - PHP Notice:  Use of undefined constant prddtl - assumed 'prddtl' in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 628
+2019-12-13 6:28:43 - PHP Notice:  Undefined index: customer_id in /var/www/html/shop/catalog/controller/mpos/placeorder.php on line 636

@@ -1,0 +1,4 @@
+2019-12-13 6:19:55 - SELECT * FROM `oc_user` WHERE user_id = '80'  AND status = '1'
+2019-12-13 6:20:58 - SELECT * FROM `oc_user` WHERE user_id = '80'  AND status = '1'
+2019-12-13 6:26:01 - SELECT * FROM `oc_user` WHERE user_id = '80'  AND status = '1'
+2019-12-13 6:28:43 - SELECT * FROM `oc_user` WHERE user_id = '80'  AND status = '1'

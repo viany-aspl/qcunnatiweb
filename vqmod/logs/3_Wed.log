@@ -1,0 +1,28 @@
+---------- Date: 2019-10-02 06:29:37 ~ IP : 37.9.113.87 ----------
+REQUEST URI : /index.php?route=product/category&path=7
+MOD DETAILS:
+   modFile   : C:\inetpub\wwwroot\qcunnati\vqmod/xml/vqmod_promotion_label.xml
+   id        : Promotion Label
+   version   : 2.0.0
+   vqmver    : 2.4.1
+   author    : <a onClick="window.open('http://www.opencart.com/index.php?route=extension/extension&filter_username=frymi');" title="View all OpenCart extension by frymi">frymi</a>
+
+File Name    : catalog/controller/product/category.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $this->data['products'][] = array(
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-10-02 18:51:33 ~ IP : 37.9.113.87 ----------
+REQUEST URI : /index.php?route=common/home
+MOD DETAILS:
+   modFile   : C:\inetpub\wwwroot\qcunnati\vqmod/xml/vqmod_promotion_label.xml
+   id        : Promotion Label
+   version   : 2.0.0
+   vqmver    : 2.4.1
+   author    : <a onClick="window.open('http://www.opencart.com/index.php?route=extension/extension&filter_username=frymi');" title="View all OpenCart extension by frymi">frymi</a>
+
+File Name    : catalog/controller/module/featured.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $this->data['products'][] = array(
+----------------------------------------------------------------------
+
+

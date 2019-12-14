@@ -1,0 +1,26 @@
+2019-12-13 6:19:55 - SELECT os.store_id,osu.unit_id,os.company_id,oc.company_name,ou.unit_name FROM oc_store as os
+JOIN oc_store_to_unit as osu on os.store_id=osu.store_id join oc_unit as ou on osu.unit_id=ou.unit_id
+JOIN oc_company as oc on os.company_id=oc.company_id
+where os.store_id='46' limit 1
+2019-12-13 6:19:55 - Array
+(
+    [store_id] => 46
+    [unit_id] => 01
+    [company_id] => 1
+    [company_name] => DSCL
+    [unit_name] => AJBAPUR
+)
+
+2019-12-13 6:28:43 - SELECT os.store_id,osu.unit_id,os.company_id,oc.company_name,ou.unit_name FROM oc_store as os
+JOIN oc_store_to_unit as osu on os.store_id=osu.store_id join oc_unit as ou on osu.unit_id=ou.unit_id
+JOIN oc_company as oc on os.company_id=oc.company_id
+where os.store_id='46' limit 1
+2019-12-13 6:28:43 - Array
+(
+    [store_id] => 46
+    [unit_id] => 01
+    [company_id] => 1
+    [company_name] => DSCL
+    [unit_name] => AJBAPUR
+)
+

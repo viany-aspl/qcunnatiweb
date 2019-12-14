@@ -1,0 +1,14 @@
+---------- Date: 2019-11-18 16:13:17 ~ IP : 1.22.91.231 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : C:\inetpub\wwwroot\qcunnati\vqmod/xml/vqmod_promotion_label.xml
+   id        : Promotion Label
+   version   : 2.0.0
+   vqmver    : 2.4.1
+   author    : <a onClick="window.open('http://www.opencart.com/index.php?route=extension/extension&filter_username=frymi');" title="View all OpenCart extension by frymi">frymi</a>
+
+File Name    : catalog/controller/module/featured.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $this->data['products'][] = array(
+----------------------------------------------------------------------
+
+

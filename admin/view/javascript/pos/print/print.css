@@ -1,0 +1,123 @@
+@page {
+    size: A8;
+    margin: 0;
+	
+}
+
+body{
+    background: red;
+}
+
+.cart_remove, .plus, .minus{
+    display: none !important;
+}
+.cart_table, .total_wrapper{
+    width: 380px;
+}
+.metro table {
+  max-width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.metro .table {
+  width: 100%;
+  margin-bottom: 14pt;
+}
+.metro .table th,
+.metro .table td {
+  padding: 8px;
+  font-size: 14px;
+  line-height: 14pt;
+  vertical-align: top;
+  border-bottom: 1px #eaeaea solid;
+}
+.metro .table th[class*="span"],
+.metro .table td[class*="span"] {
+  display: table-cell !important;
+  float: none !important;
+  margin: 0;
+}
+.metro .table thead th {
+  vertical-align: bottom;
+}
+.metro .table thead th,
+.metro .table thead td {
+  border-bottom: 1px solid #111111;
+}
+.metro .table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.metro .table tbody + tbody {
+  border-top: 2px solid #eaeaea;
+}
+.metro .table tfoot th,
+.metro .table tfoot td {
+  border-top: 1px solid #111111;
+}
+.metro .table .table {
+  background-color: #bfbfbf;
+}
+.metro .table.condensed th,
+.metro .table.condensed td {
+  padding: 4px 5px;
+}
+.metro .table.condensed th .input-control,
+.metro .table.condensed td .input-control {
+  margin: 0;
+}
+.metro .table.super-condensed th,
+.metro .table.super-condensed td {
+  padding: 2px;
+}
+.metro .table.super-condensed th .input-control,
+.metro .table.super-condensed td .input-control {
+  margin: 0;
+}
+.metro .table.striped tbody tr:nth-child(odd) {
+  background: #eeeeee;
+}
+.metro .table.bordered {
+  border: 1px #eaeaea solid;
+  border-left: 0;
+}
+.metro .table.bordered td,
+.metro .table.bordered th {
+  border-left: 1px #eaeaea solid;
+  border-bottom: 1px #eaeaea solid;
+}
+.metro .table.no-border td,
+.metro .table.no-border th {
+  border: 0;
+}
+.metro .table.border {
+  border: 1px #eaeaea solid !important;
+}
+.metro .table.hovered tbody tr:hover {
+  background-color: rgba(28, 183, 236, 0.1);
+}
+.metro .table tr.success {
+  background-color: #60a917 !important;
+}
+.metro .table tr.error {
+  background-color: #e51400 !important;
+}
+.metro .table tr.warning {
+  background-color: #fa6800 !important;
+}
+.metro .table tr.info {
+  background-color: #4390df !important;
+}
+.metro .table tr.info td,
+.metro .table tr.warning td,
+.metro .table tr.error td,
+.metro .table tr.success td,
+.metro .table tr.info td *,
+.metro .table tr.warning td *,
+.metro .table tr.error td *,
+.metro .table tr.success td * {
+  color: #ffffff !important;
+}
+.metro .table tr.selected {
+  background-color: rgba(28, 183, 236, 0.1);
+}
