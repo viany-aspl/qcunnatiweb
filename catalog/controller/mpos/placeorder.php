@@ -20,7 +20,7 @@ class ControllermposPlaceorder extends Controller {
         }
     }
 
-    //\\################ Start## tagged order Api create on 7-12-2019################\\//
+    //\\################ Start## tagged order Api create on 9-12-2019################\\//
     public function placeorder() {
 
         $log = new Log("dscl placeorder-" . date('Y-m-d') . ".log");

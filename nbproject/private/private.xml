@@ -15,11 +15,8 @@
             <file>file:/var/www/html/shop/admin/model/pos/dscl.php</file>
             <file>file:/var/www/html/shop/admin/model/pos/pos.php</file>
             <file>file:/var/www/html/shop/catalog/controller/mpos/placeorder.php</file>
-            <file>file:/var/www/html/shop/admin/model/farmerrequest/farmerrequest.php</file>
-            <file>file:/var/www/html/shop/catalog/model/account/subuser.php</file>
-            <file>file:/var/www/html/shop/admin/controller/farmerrequest/reviewform.php</file>
             <file>file:/var/www/html/shop/admin/model/card/integration.php</file>
-            <file>file:/var/www/html/shop/admin/view/template/catalog/product_form.tpl</file>
+            <file>file:/var/www/html/shop/catalog/controller/mpos/order.php</file>
         </group>
     </open-files>
 </project-private>
